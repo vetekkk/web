@@ -1,4 +1,4 @@
-.text-decription {
+.text__description {
   background-color: #F0F0F0;
   padding: 16% 15% 10% 7%;
   height: 360px;
@@ -172,7 +172,7 @@ body {
   margin-bottom: -8px;
 }
 
-.footter-information {
+.footter__information {
   margin-left: 45px;
   font-family: 'Gilroy-Light';
   font-weight: lighter;
@@ -209,7 +209,7 @@ body {
 
 }
 
-.link-detail {
+.link__detail {
   display: block;
 }
 
@@ -270,4 +270,29 @@ body {
 .sidebar__nav button:focus:after {
   width: 100%;
 
+}
+
+#tabs .tab {
+  position: relative;
+  z-index: 5;
+}
+
+#tabs .whiteborder { 
+  font-size: larger;
+}
+
+
+#tabs .tabContent {
+  width: 300px; 
+  height:400px; 
+  position: relative;
+  z-index: 1;
+}
+
+#tabs .hide {
+  display:none;
+}
+
+#tabs .show {
+  display:block;
 }
