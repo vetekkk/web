@@ -1,14 +1,14 @@
 @font-face {
   font-family: Gilroy;
-  src: url(/fonts/gilroy-regular.woff2) format("woff2");
+  src: url(fonts/gilroy-regular.woff2) format("woff2");
 }
 
 @font-face {
   font-family: Gilroy-bold;
   src: local("fonts/Gilroy Extrabold"), local("fonts/Gilroy-Extrabold"),
-    url("/fonts/Gilroy-extrabold/Gilroy-Extrabold.woff2") format("woff2"),
-    url("/fonts/Gilroy-extrabold/Gilroy-Extrabold.woff") format("woff"),
-    url("/fonts/Gilroy-extrabold/Gilroy-Extrabold.ttf") format("truetype");
+    url("fonts/Gilroy-extrabold/Gilroy-Extrabold.woff2") format("woff2"),
+    url("fonts/Gilroy-extrabold/Gilroy-Extrabold.woff") format("woff"),
+    url("fonts/Gilroy-extrabold/Gilroy-Extrabold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
 }
