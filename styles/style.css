@@ -11,7 +11,6 @@
   font-style: normal;
 }
 
-
 .header {
   height: 60px;
   display: flex;
@@ -73,20 +72,20 @@
 }
 
 .article__header {
-  font-family: Gilroy-bold;
+  font-family: "Gilroy-bold";
   font-size: 44px;
   text-transform: uppercase;
 }
 
 .article__header_ {
-  font-family: Gilroy-bold;
+  font-family: "Gilroy-bold";
   font-size: 44px;
   text-transform: uppercase;
   line-height: 50px;
 }
 
 .article__text {
-  font-family: Gilroy;
+  font-family: "Gilroy";
   font-size: 18px;
   line-height: 30px;
   /* or 167% */
@@ -153,7 +152,7 @@
   font-size: 13px;
   line-height: 29px;
   letter-spacing: 0.567739px;
-  font-family: Gilroy;
+  font-family: "Gilroy";
   white-space: nowrap;
 }
 
@@ -182,7 +181,7 @@
   padding-top: 20px;
   display: flex;
   text-transform: uppercase;
-  font-family: Gilroy-bold;
+  font-family: "Gilroy-bold";
 }
 
 .burger {
@@ -200,7 +199,7 @@
 .phone {
   height: 60px;
   color: #262525;
-  font-family: Gilroy-bold;
+  font-family: "Gilroy-bold";
   font-size: 17px;
   line-height: 60px;
   white-space: nowrap;
@@ -236,15 +235,15 @@
 .navigate {
   position: absolute;
   bottom: 190px;
-  font-family: Gilroy;
+  font-family: "Gilroy";
 }
 
 .sidebar__items-link li {
   text-decoration: none;
-  /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
+  
 
   color: #2f73b6;
-  /*Задаём цвет ссылки*/
+  
 }
 
 li {
