@@ -5,8 +5,8 @@
 
 @font-face {
   font-family: "Gilroy-bold";
-  src: url("fonts/Gilroy-Extrabold.woff2") format("woff2"),
-    url("fonts/Gilroy-Extrabold.woff") format("woff");
+  src: url("web/styles/fonts/Gilroy-Extrabold.woff2") format("woff2"),
+    url("web/styles/fonts/Gilroy-Extrabold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
