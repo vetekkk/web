@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Gilroy";
-  src: url(".../styles/fonts/gilroy-regular.woff2") format("woff2");
+  src: url(".../fonts/gilroy-regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Gilroy-bold";
-  src:url(".../styles/fonts/Gilroy-Extrabold.woff2") format("woff2"),
-    url(".../styles/fonts/Gilroy-Extrabold.woff") format("woff");
+  src: url(".../fonts/Gilroy-Extrabold.woff2") format("woff2"),
+    url(".../fonts/Gilroy-Extrabold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
@@ -30,7 +30,7 @@
 .menu__item {
   font-family: "Gilroy";
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 0.8px;
@@ -240,10 +240,8 @@
 
 .sidebar__items-link li {
   text-decoration: none;
-  
 
   color: #2f73b6;
-  
 }
 
 li {
@@ -271,9 +269,34 @@ li:after {
   /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
 }
 
-li:hover:after,
-li:focus:after {
-  width: 1200%;
+.active6:hover:after,
+.active6:focus:after {
+  width: 200px;
+}
+
+.active5:hover:after,
+.active5:focus:after {
+  width: 130px;
+}
+
+.active4:hover:after,
+.active4:focus:after {
+  width: 80px;
+}
+
+.active3:hover:after,
+.active3:focus:after {
+  width: 110px;
+}
+
+.active2:hover:after,
+.active2:focus:after {
+  width: 130px;
+}
+
+.active1:hover:after,
+.active1:focus:after {
+  width: 100px;
 }
 
 li:hover {
