@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Gilroy";
-  src: url(".../fonts/gilroy-regular.woff2") format("woff2");
+  src: url("styles/fonts/gilroy-regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Gilroy-bold";
-  src:url(".../fonts/Gilroy-Extrabold.woff2") format("woff2"),
-    url(".../fonts/Gilroy-Extrabold.woff") format("woff");
+  src:url("styles/fonts/Gilroy-Extrabold.woff2") format("woff2"),
+    url("styles/fonts/Gilroy-Extrabold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
@@ -30,7 +30,7 @@
 .menu__item {
   font-family: "Gilroy";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 0.8px;
