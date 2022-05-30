@@ -4,7 +4,7 @@
 }
 
   font-family: 'Gilroy';
-    src: local('/fonts/Gilroy Extrabold'), local('/fonts/Gilroy-Extrabold'),
+    src: local('fonts/Gilroy Extrabold'), local('fonts/Gilroy-Extrabold'),
         url('Gilroy-Extrabold.woff2') format('woff2'),
         url('Gilroy-Extrabold.woff') format('woff'),
         url('Gilroy-Extrabold.ttf') format('truetype');
