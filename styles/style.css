@@ -4,7 +4,7 @@
 }
 
 @font-face {
-  font-family: "Gilroy-bold";
+  font-family: "Gilroy";
   src: url("../fonts/Gilroy-Extrabold.woff2") format("woff2"),
     url("../Gilroy-Extrabold.woff") format("woff");
   font-weight: 800;
@@ -30,7 +30,7 @@
 .menu__item {
   font-family: "Gilroy";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 0.8px;
@@ -72,13 +72,15 @@
 }
 
 .article__header {
-  font-family: "Gilroy-bold";
+  font-family: "Gilroy";
+  font-weight: 800;
   font-size: 44px;
   text-transform: uppercase;
 }
 
 .article__header_ {
-  font-family: "Gilroy-bold";
+  font-family: "Gilroy";
+  font-weight: 800;
   font-size: 44px;
   text-transform: uppercase;
   line-height: 50px;
@@ -181,7 +183,8 @@
   padding-top: 20px;
   display: flex;
   text-transform: uppercase;
-  font-family: "Gilroy-bold";
+  font-family: "Gilroy";
+  font-weight: 800;
 }
 
 .burger {
@@ -199,7 +202,8 @@
 .phone {
   height: 60px;
   color: #262525;
-  font-family: "Gilroy-bold";
+  font-family: "Gilroy";
+  font-weight: 800;
   font-size: 17px;
   line-height: 60px;
   white-space: nowrap;
@@ -241,7 +245,7 @@
 .sidebar__items-link li {
   text-decoration: none;
 
-  color: #2f73b6;
+
 }
 
 li {
@@ -305,7 +309,7 @@ li:hover {
 
 .zoom {
   transition: transform 0.2s;
-  /* Animation */
+
   width: 10px;
   height: 10px;
 }
@@ -313,7 +317,8 @@ li:hover {
 .zoom:hover {
   transform: scale(1.2);
   /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  font-family: Gilroy-bold;
+  font-family: "Gilroy";
+  font-weight: 800;
 }
 
 .menu__item {
@@ -324,8 +329,8 @@ li:hover {
 .menu__item:hover {
   transform: scale(1.2);
   /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  font-family: Gilroy-bold;
-  font-weight: bolder;
+  font-family: "Gilroy";
+  font-weight: 800;
 }
 
 .menu__item:after {
