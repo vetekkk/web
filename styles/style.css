@@ -1,4 +1,6 @@
-@font-face {
+
+
+font-face {
   font-family: "Gilroy";
   src: url("../fonts/gilroy-regular.woff2") format("woff2");
 }
@@ -11,6 +13,10 @@
   font-style: normal;
 }
 
+body {
+  margin: 0 0 0 0;
+}
+
 .header {
   height: 60px;
   display: flex;
@@ -19,46 +25,14 @@
   padding-right: 122px;
 }
 
-.menu__items {
-  display: flex;
-  column-gap: 56px;
-  list-style: none;
-  padding: 0;
-  text-decoration: none;
-}
-
-.menu__item {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 12px;
-  line-height: 15px;
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
-  white-space: nowrap;
-  text-decoration: none;
-}
-
-.menu__item a {
-  color: #262525;
-  text-decoration: none;
-  display: block;
-  text-decoration: none;
-}
-
 .main {
-  display: flex;
-  height: 840px;
-}
-
-.content {
   display: flex;
   height: 840px;
 }
 
 .article {
   width: 435px;
-  background-color: #f0f0f0;
+
   padding-top: 326px;
   padding-left: 172px;
   padding-right: 152px;
@@ -95,38 +69,9 @@
   letter-spacing: -0.0220791px;
 }
 
-.link__detail {
-  position: absolute;
-  left: 750px;
-}
-
-.link__detail1 {
-  position: absolute;
-  left: 820px;
-}
-
-.link__detail2 {
-  position: absolute;
-  left: 610px;
-}
-
-.link__detail3 {
-  position: absolute;
-  left: 750px;
-}
-
-.link__detail4 {
-  position: absolute;
-  left: 870px;
-}
-
-.link__detail5 {
-  position: absolute;
-  left: 840px;
-}
-
-.illustration {
-  width: 759px;
+.link__detail25 {
+  padding: 5px;
+  background-color: black;
 }
 
 .sidebar {
@@ -143,26 +88,7 @@
   padding: 0;
   white-space: nowrap;
   font-size: 13px;
-}
-
-.sidebar__item {
-  /* Desctop/SectionMenu */
-  text-transform: uppercase;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 13px;
-  line-height: 29px;
-  letter-spacing: 0.567739px;
-  font-family: "Gilroy";
-  white-space: nowrap;
-}
-
-.sidebar__item a {
-  color: #505050;
-  text-decoration: none;
-  display: block;
-  font-size: 13px;
+  background-color: white;
 }
 
 .logo {
@@ -176,6 +102,7 @@
   background-color: #262525;
   width: 70px;
   height: 70px;
+  z-index: 60;
 }
 
 .logo__text {
@@ -185,6 +112,7 @@
   text-transform: uppercase;
   font-family: "Gilroy";
   font-weight: 800;
+  z-index: 20;
 }
 
 .burger {
@@ -197,6 +125,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  z-index: 60;
 }
 
 .phone {
@@ -207,7 +137,7 @@
   font-size: 17px;
   line-height: 60px;
   white-space: nowrap;
-
+  z-index: 20;
   letter-spacing: 0.290629px;
   text-transform: uppercase;
 }
@@ -227,133 +157,190 @@
   align-items: center;
 }
 
-.footer__year::before {
-  content: "|";
-  padding: 0 16px;
-}
-
-.content--hidden {
-  display: none;
-}
-
 .navigate {
   position: absolute;
   bottom: 190px;
   font-family: "Gilroy";
 }
 
-.sidebar__items-link li {
-  text-decoration: none;
-
-
+.footer__year::before {
+  content: "|";
+  padding: 0 16px;
 }
 
-li {
-  text-decoration: none;
-  /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
-  display: inline-block;
-  /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный 
-    line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
-  color: #2f73b6;
-  /*Задаём цвет ссылки*/
+.content {
+  display: flex;
+  height: 840px;
+  z-index: 9;
+  vertical-align: middle;
+  margin-right: 50px;
+  background: #f0f0f0;
 }
 
-li:after {
-  display: block;
-  /*превращаем его в блочный элемент*/
-  content: "";
-  /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
-  height: 3px;
-  /*задаём высоту линии*/
-  width: 0%;
-  /*задаём начальную ширину элемента (линии)*/
-  background-color: orange;
-  /*цвет фона элемента*/
-  transition: width 0.4s ease-in-out;
-  /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+.content--hidden {
+  position: absolute;
+  right: 10px;
+  z-index: 6;
+  animation-name: contentHiddenAnimation;
+  animation-duration: 2000ms;
+  background: none;
 }
 
-.active6:hover:after,
-.active6:focus:after {
-  width: 200px;
-}
-
-.active5:hover:after,
-.active5:focus:after {
-  width: 130px;
-}
-
-.active4:hover:after,
-.active4:focus:after {
-  width: 80px;
-}
-
-.active3:hover:after,
-.active3:focus:after {
-  width: 110px;
-}
-
-.active2:hover:after,
-.active2:focus:after {
-  width: 130px;
-}
-
-.active1:hover:after,
-.active1:focus:after {
-  width: 100px;
-}
-
-li:hover {
-  color: orange;
-}
-
-.zoom {
-  transition: transform 0.2s;
-
-  width: 10px;
-  height: 10px;
-}
-
-.zoom:hover {
-  transform: scale(1.2);
-  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+.sidebar__item {
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0.567739px;
   font-family: "Gilroy";
+  white-space: nowrap;
+}
+
+.sidebar__item--active {
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 800;
+  line-height: 29px;
+  letter-spacing: 0.567739px;
+  font-family: "Gilroy";
+  white-space: nowrap;
+  width: min-content;
+  text-decoration: none;
+  color: #505050;
+  background-image: url("/img/active.png");
+  background-repeat: no-repeat;
+  background-position: 0 13px;
+  background-size: 100% 80%;
+}
+
+.sidebar__link:hover {
+  background-image: url("/img/active.png");
+  background-repeat: no-repeat;
+  background-position: 0 18px;
+  background-size: 100% 20%;
+}
+
+.sidebar__link {
+  color: #505050;
+  display: block;
+  font-size: 13px;
+  text-decoration: none;
+  width: min-content;
+}
+
+@keyframes contentHiddenAnimation {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    z-index: 10;
+    background: none;
+  }
+
+  90% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    z-index: 10;
+    background: none;
+  }
+
+  100% {
+    z-index: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes contentHiddenAnimation1 {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    z-index: 10;
+    background: none;
+  }
+
+  90% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    z-index: 10;
+    background: none;
+  }
+
+  100% {
+    z-index: 0;
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 
 .menu__item {
-  transition: transform 0.2s;
-  /* Animation */
-}
-
-.menu__item:hover {
-  transform: scale(1.2);
-  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   font-family: "Gilroy";
+  font-style: normal;
   font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: 20;
 }
 
-.menu__item:after {
+.menu__link--active {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: 20;
+  color: #262525;
+  text-decoration: none;
+  padding-bottom: 8px;
+  border-bottom: 4px solid #d88f5e;
+}
+
+.menu__items {
+  display: flex;
+  column-gap: 56px;
+  list-style: none;
+  padding: 0;
+  z-index: 20;
+}
+
+.menu__link {
+  display: flex;
+  column-gap: 56px;
+  list-style: none;
+  padding: 0;
+  z-index: 20;
+  text-decoration: none;
+  color: #262525;
+}
+
+.menu__item {
+  color: #262525;
   display: block;
-  /*превращаем его в блочный элемент*/
-  content: "";
-  /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
-  height: 3px;
-  /*задаём высоту линии*/
-  width: 0%;
-  /*задаём начальную ширину элемента (линии)*/
-  background-color: orange;
-  /*цвет фона элемента*/
-  transition: width 0.4s ease-in-out;
-  /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+  z-index: 20;
+  text-decoration: none;
 }
 
-.menu__item:hover:after,
-li:focus:after {
-  width: 100%;
-  margin-top: 8px;
+.slide--hidden {
+  visibility: hidden;
+  opacity: 0;
 }
 
-.menu__item:hover {
-  color: orange;
+.slide {
+  width: 1820px;
+  height: 850px;
+  background-color: #f0f0f0;
+  z-index: 50;
+  margin-left: 50px;
+  position: absolute;
+}
+
+a {
+  position: relative;
+  z-index: 50;
 }
