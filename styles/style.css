@@ -173,6 +173,7 @@ body {
   vertical-align: middle;
   margin-right: 50px;
   background: #f0f0f0;
+  
 }
 
 .content--hidden {
@@ -182,6 +183,7 @@ body {
   animation-name: contentHiddenAnimation;
   animation-duration: 2000ms;
   background: none;
+  font-size: 0px;
 }
 
 .sidebar__item {
@@ -234,20 +236,27 @@ body {
     transform: translateY(0);
     z-index: 10;
     background: none;
-    font-size: 0;
+    
   }
 
-  90% {
+  50% {
     -webkit-transform: translateY(-1000px);
     transform: translateY(-1000px);
     z-index: 10;
-    background: none;
-    font-size: 0;
+    background: none; 
   }
+
+    70% {
+      visibility:0.4;
+    }
+
+    90% {
+      visibility:0.2;
+    }
 
   100% {
     z-index: 0;
-    visibility: hidden;
+    visibility:0.3;
   }
 }
 
@@ -325,5 +334,7 @@ body {
   width: 1800px;
   right: 10px;
 }
+
+
 
 
